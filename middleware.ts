@@ -1,6 +1,5 @@
-import { stackMiddlewares } from "middlewares/stackMiddlewares";
-import { withAuthorization } from "middlewares/withAuthorization";
-import { withHeaders } from "middlewares/withHeaders";
-import { withLogging } from "middlewares/withLogging";
+import { NextRequest, NextResponse } from "next/server";
 
-export default stackMiddlewares([withAuthorization, withLogging, withHeaders]);
+export async function middleware(req: NextRequest){
+    return NextResponse.next()
+}
