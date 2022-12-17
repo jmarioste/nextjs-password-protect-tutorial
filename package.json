@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/cookie": "^0.5.1",
+    "cookie": "^0.5.0",
     "daisyui": "^2.42.1",
     "next": "13.0.5",
     "react": "18.2.0",
